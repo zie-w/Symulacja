@@ -20,7 +20,7 @@ Możliwe opcje uruchamiania:\
 Pliki JSON powinny być zgodne z poniższym schematem, służącym do symulacji działań na pojazdach. Każdy plik zawiera pole `commands`, które jest tablicą obiektów określających kolejne kroki symulacji.
 
 ### Struktura Podstawowa
-Każdy plik JSON powinien wyglądać następująco:
+Każdy plik wejściowy JSON powinien wyglądać następująco:
 
 ```json
 {
