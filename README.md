@@ -115,5 +115,7 @@ Poniżej znajduje się kompletny przykład poprawnego pliku JSON:
 ```
 ## Zrzuty ekranu
 
+Zrzut ekranu działającego programu z opcją **-v**
+
 ![App Screenshot](https://github.com/zie-w/Symulacja/blob/66b01de798d4b1b43c67a8681e36102e3ee352e9/screenshots/screenshot1.png)
 
