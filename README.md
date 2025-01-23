@@ -4,7 +4,7 @@
 Program symuluje ruch na skrzyżowaniu. Jest to skrzyżowanie, do którego prowadzą cztery drogi, przy każdej drodze znajdują się światła kontrolujące ruch pojazdów.
 Symulacja jest kontrolowana komendami umieszczonymi w pliku JSON i wyniki symulacji w formie listy stanów po kolejnych krokach symulacji zapisuje do pliku JSON. 
 ## Działanie algorytmu świateł
-Światła na zmianę świecą się na zielono i czerwono w parach dla drogi północnej i południowej oraz wschodniej i zachodniej. To w którym momencie światła zmienią kolor decyduje sumaryczna liczba pojazdów na drogach o tym samym kierunku. Gdy na drodze ze wschodu na zachód jest więcej świateł to te drogi mają zapalone zielone światło, analogicznie dla świateł przy drogach północ-południe. W przypadku gdy światła są zapalone w taki sam sposób przez zbyt długi czas to układ świateł odwraca się. 
+Światła na zmianę świecą się na zielono i czerwono w parach dla drogi północnej i południowej oraz wschodniej i zachodniej. To w którym momencie światła zmienią kolor decyduje sumaryczna liczba pojazdów na drogach o tym samym kierunku. Gdy na drodze ze wschodu na zachód jest więcej pojazdów to te drogi mają zapalone zielone światło, analogicznie dla świateł przy drogach północ-południe. Algorytm świateł dodatkowo uwzględnia maksymalny czas oczekiwania na przejazd. 
 ## Uruchamianie programu
 
 Zaczynając w ```./Symulacja-main/out/artifacts/TrafficLightsSimulation_jar/``` program jest uruchamiany następująco:
