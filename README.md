@@ -155,6 +155,7 @@ Rezultatem symulacji jest plik JSON zawierający listę pojazdów, które opuśc
 - Lista identyfikatorów pojazdów, które opuściły skrzyżowanie w danym kroku symulacji.
 
 ## Zrzuty ekranu
-Okno uruchomionego programu z opcją **-v** w środku przeprowadzania symulacji
+Okno uruchomionego programu z opcją **-v** w środku przeprowadzania symulacji\
+
 ![App Screenshot](https://github.com/zie-w/Symulacja/blob/66b01de798d4b1b43c67a8681e36102e3ee352e9/screenshots/screenshot1.png)
 
