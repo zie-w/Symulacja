@@ -25,7 +25,7 @@ Każdy plik JSON powinien wyglądać następująco:
 ```json
 {
   "commands": [
-    // Kolejne obiekty-komendy
+    /* Kolejne obiekty-komendy */
   ]
 }
 ```
