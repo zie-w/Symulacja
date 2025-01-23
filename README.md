@@ -20,7 +20,7 @@ Możliwe opcje uruchamiania:\
 Pliki JSON powinny być zgodne z poniższym schematem, służącym do symulacji działań na pojazdach. Każdy plik zawiera pole `commands`, które jest tablicą obiektów określających kolejne kroki symulacji.
 
 ### Struktura Podstawowa
-Każdy plik wejściowy JSON powinien wyglądać następująco:
+Każdy plik JSON powinien wyglądać następująco:
 
 ```json
 {
@@ -113,9 +113,47 @@ Poniżej znajduje się kompletny przykład poprawnego pliku JSON:
   ]
 }
 ```
-## Zrzuty ekranu
+## Struktura pliku wyjściowego
 
-Zrzut ekranu działającego programu z opcją **-v**
+Rezultatem symulacji jest plik JSON zawierający listę pojazdów, które opuściły skrzyżowanie po każdym kroku.
+
+### Przykładowe Wyjście
+```json
+{
+  "stepStatuses": [
+    {
+      "leftVehicles": [
+        "vehicle1",
+        "vehicle2"
+      ]
+    },
+    {
+      "leftVehicles": []
+    },
+    {
+      "leftVehicles": [
+        "vehicle3"
+      ]
+    },
+    {
+      "leftVehicles": [
+        "vehicle4"
+      ]
+    }
+  ]
+}
+```
+
+---
+
+### Wyjaśnienie Pól Wyjścia
+
+#### 1. `stepStatuses`
+- Zawiera listę statusów dla każdego kroku symulacji.
+
+#### 2. `leftVehicles`
+- Lista identyfikatorów pojazdów, które opuściły skrzyżowanie w danym kroku symulacji.
+## Zrzuty ekranu
 
 ![App Screenshot](https://github.com/zie-w/Symulacja/blob/66b01de798d4b1b43c67a8681e36102e3ee352e9/screenshots/screenshot1.png)
 
